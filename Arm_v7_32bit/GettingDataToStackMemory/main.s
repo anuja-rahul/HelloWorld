@@ -6,7 +6,7 @@ _start:
 	LDR R1, [R0]
 	// (pre increment addressing) changes the value in R0
 	LDR R2, [R0,#4]!
-	// (prost increment addressing)
+	// (post increment addressing)
 	LDR R2, [R0],#4
 
 
