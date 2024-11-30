@@ -4,7 +4,10 @@ _start:
 	LDR R0,=list
 	// (register indirect addressing)
 	LDR R1, [R0]
-	LDR R2, [R0,#4]
+	// (pre increment addressing) changes the value in R0
+	LDR R2, [R0,#4]!
+	// (prost increment addressing)
+	LDR R2, [R0],#4
 
 
 .data
